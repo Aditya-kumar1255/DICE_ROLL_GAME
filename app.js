@@ -67,7 +67,7 @@ hold_game.addEventListener('click', function () {
         document.querySelector(`.player-${current_player}-score`).textContent = score[current_player];
 
         //if score greater than 100 current player wins
-        if (score[current_player] >= 20) {
+        if (score[current_player] >= 100) {
             playing = false;
             document.querySelector(`.block-${current_player + 1}`).classList.add('bg');
             dice_img.classList.add('hide');
